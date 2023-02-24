@@ -1,34 +1,56 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# コンポーネント理解
 
-## Getting Started
+## 参考スクショ
 
-First, run the development server:
+<img width="1680" alt="スクリーンショット 2023-02-25 4 39 10" src="https://user-images.githubusercontent.com/66903388/221275278-1384f05c-3273-42a3-aedb-1ecdbda99dd4.png">
 
-```bash
-npm run dev
-# or
-yarn dev
+## Next.jsプロジェクト作成
+
+```
+$ npx create-next-app test
+$ cd test
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Githubの使い方
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+### git status
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+- 現在のステータスを確認
+  - 赤→unStaged, 緑→Staged
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+```
+$ git status
+```
 
-## Learn More
+### git add
 
-To learn more about Next.js, take a look at the following resources:
+- statusが赤い場合は`git add`を使ってStagedにする
+  - unStagedの全てを指定する場合は`git add .`、特定のパスを指定する場合は`git add パス`
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```
+$ git add .
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### git commit
 
-## Deploy on Vercel
+-  `-m`の後のダブルコーテーションの中はコミットメッセージを記述する。
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```
+$ git commit -m "first commit"
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### git remote add origin URL
+
+- Githubのリモートリポジトリに紐付ける
+
+```
+$ git remote add origin https://github.com/Matsushoooo12/test.git
+```
+
+###　git push origin リモートブランチ
+
+- このプッシュを行うことでGithubでファイルを管理できるようになる。
+
+```
+$ git push origin master
+```
