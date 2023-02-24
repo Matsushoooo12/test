@@ -47,7 +47,7 @@ $ git commit -m "first commit"
 $ git remote add origin https://github.com/Matsushoooo12/test.git
 ```
 
-###　git push origin リモートブランチ
+### git push origin リモートブランチ
 
 - このプッシュを行うことでGithubでファイルを管理できるようになる。
 
