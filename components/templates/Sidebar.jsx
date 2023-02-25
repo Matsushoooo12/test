@@ -8,7 +8,6 @@ const Sidebar = () => {
     <Flex
       w="240px"
       h="100vh"
-      //   bg="blue"
       position="fixed"
       zIndex="-1"
       direction="column"
