@@ -4,6 +4,18 @@
 
 <img width="1680" alt="スクリーンショット 2023-02-25 4 39 10" src="https://user-images.githubusercontent.com/66903388/221275278-1384f05c-3273-42a3-aedb-1ecdbda99dd4.png">
 
+## 手順
+
+1. Next.js プロジェクト作成
+2. Github のリポジトリにプロジェクトを push
+3. Next.js のコンポーネント理解
+4. サーバーを起動
+5. 必要ライブラリを導入
+6. Atomic デザインについて
+7. Header 作成
+8. Sidebar 作成
+9. main ページ作成
+
 ## Next.js プロジェクト作成
 
 ```
@@ -11,7 +23,7 @@ $ npx create-next-app test
 $ cd test
 ```
 
-## Github の使い方
+## Github のリポジトリにプロジェクトを push
 
 ### git status
 
@@ -79,7 +91,9 @@ $ yarn dev
 
 `http://localhost:3000`という URL で表示される。
 
-## prettier を導入
+## 必要ライブラリを導入
+
+### prettier を導入
 
 ```
 $ yarn add prettier
@@ -100,7 +114,7 @@ $ touch .prettierrc
 }
 ```
 
-## CSS ライブラリを導入
+### CSS ライブラリを導入
 
 今回は Chakra-UI
 
@@ -127,7 +141,7 @@ function MyApp({ Component, pageProps }) {
 export default MyApp;
 ```
 
-## Atomic デザイン
+## Atomic デザインについて
 
 参考サイト：https://design.dena.com/design/atomic-design-%E3%82%92%E5%88%86%E3%81%8B%E3%81%A3%E3%81%9F%E3%81%A4%E3%82%82%E3%82%8A%E3%81%AB%E3%81%AA%E3%82%8B
 

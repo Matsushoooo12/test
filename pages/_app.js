@@ -1,5 +1,6 @@
 import { ChakraProvider, Flex } from "@chakra-ui/react";
 import Header from "../components/templates/Header";
+import Sidebar from "../components/templates/Sidebar";
 import "../styles/globals.css";
 
 function MyApp({ Component, pageProps }) {
@@ -8,13 +9,7 @@ function MyApp({ Component, pageProps }) {
       <Header />
       <Flex w="100%" h="100%" justifyContent="center">
         <Flex w="1280px" h="100%">
-          <Flex
-            w="240px"
-            h="100vh"
-            bg="blue"
-            position="fixed"
-            zIndex="-1"
-          ></Flex>
+          <Sidebar />
           <Flex flex={1} ml="240px">
             <Component {...pageProps} />
           </Flex>
